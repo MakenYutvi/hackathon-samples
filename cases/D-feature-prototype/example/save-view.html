@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прототип: сохранить вид</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="proto-banner">Прототип · lo-fi · для обсуждения, не дизайн</div>
+  <div class="wrap">
+    <h1>Сохранить текущий вид</h1>
+    <p class="subtitle">Экран 2 из 3 · даём виду имя и сохраняем текущие фильтры</p>
+
+    <div class="card">
+      <div class="field">
+        <label>Название вида</label>
+        <input type="text" value="Почта без ответственного" autofocus>
+      </div>
+
+      <div class="field">
+        <label>Что сохраняем (текущие фильтры)</label>
+        <div class="captured">
+          Канал: <b>Почта</b><br>
+          Ответственный: <b>Не назначен</b><br>
+          Статус: <b>Все</b>
+        </div>
+      </div>
+
+      <p class="muted" style="font-size:12px;">Вид будет личным и появится в переключателе сверху списка.</p>
+
+      <div class="actions">
+        <a class="btn primary" href="applied.html">Сохранить</a>
+        <a class="btn" href="index.html">Отмена</a>
+      </div>
+    </div>
+
+    <p class="footer-hint">«Сохранить» → вид применится к списку · «Отмена» → назад</p>
+  </div>
+</body>
+</html>
