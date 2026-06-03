@@ -10,31 +10,33 @@
   <div class="proto-banner">Прототип · lo-fi · для обсуждения, не дизайн</div>
   <div class="wrap">
     <h1>Входящие заявки</h1>
-    <p class="subtitle">Экран 1 из 3 · список заявок с переключателем сохранённых видов</p>
+    <p class="subtitle">Экран 1 · список заявок с переключателем сохранённых видов. Фильтры работают, строки кликабельны.</p>
 
     <!-- Сохранённые виды -->
     <div class="views">
       <a class="view-chip active" href="index.html">Все заявки <span class="count">5</span></a>
-      <a class="view-chip" href="index.html">Мои открытые <span class="count">2</span></a>
+      <a class="view-chip" href="my-open.html">Мои открытые <span class="count">2</span></a>
       <span class="spacer"></span>
       <a class="btn" href="save-view.html">+ Сохранить текущий вид</a>
     </div>
 
-    <!-- Фильтры -->
+    <!-- Фильтры (работают через proto.js) -->
     <div class="filters">
       <div>
         <label>Канал</label>
-        <select class="select"><option>Все</option><option>Почта</option><option>Форма</option><option>Телефон</option></select>
+        <select class="select" id="f-channel"><option>Все</option><option>Почта</option><option>Форма</option><option>Телефон</option></select>
       </div>
       <div>
         <label>Ответственный</label>
-        <select class="select"><option>Все</option><option>Не назначен</option><option>Я</option></select>
+        <select class="select" id="f-owner"><option>Все</option><option>Не назначен</option><option>Я</option></select>
       </div>
       <div>
         <label>Статус</label>
-        <select class="select"><option>Все</option><option>Новая</option><option>В работе</option><option>Закрыта</option></select>
+        <select class="select" id="f-status"><option>Все</option><option>Новая</option><option>В работе</option><option>Закрыта</option></select>
       </div>
     </div>
+
+    <p class="result-count">Показано заявок: <span id="result-count">5</span> <span class="open-hint">· клик по строке открывает заявку</span></p>
 
     <!-- Список -->
     <table>
@@ -42,15 +44,21 @@
         <tr><th>Заявка</th><th>Канал</th><th>Ответственный</th><th>Статус</th></tr>
       </thead>
       <tbody>
-        <tr><td>Запрос КП на перевозку</td><td><span class="tag">Почта</span></td><td class="muted">не назначен</td><td>Новая</td></tr>
-        <tr><td>Вопрос по срокам доставки</td><td><span class="tag">Форма</span></td><td>Я</td><td>В работе</td></tr>
-        <tr><td>Жалоба на менеджера</td><td><span class="tag">Телефон</span></td><td>Анна</td><td>В работе</td></tr>
-        <tr><td>Заявка от ключевого клиента</td><td><span class="tag">Почта</span></td><td class="muted">не назначен</td><td>Новая</td></tr>
-        <tr><td>Уточнение по счёту</td><td><span class="tag">Форма</span></td><td>Я</td><td>Новая</td></tr>
+        <tr data-href="request.html" data-channel="Почта" data-owner="Не назначен" data-status="Новая">
+          <td>Запрос КП на перевозку</td><td><span class="tag">Почта</span></td><td class="muted">не назначен</td><td>Новая</td></tr>
+        <tr data-href="request.html" data-channel="Форма" data-owner="Я" data-status="В работе">
+          <td>Вопрос по срокам доставки</td><td><span class="tag">Форма</span></td><td>Я</td><td>В работе</td></tr>
+        <tr data-href="request.html" data-channel="Телефон" data-owner="Анна" data-status="В работе">
+          <td>Жалоба на менеджера</td><td><span class="tag">Телефон</span></td><td>Анна</td><td>В работе</td></tr>
+        <tr data-href="request.html" data-channel="Почта" data-owner="Не назначен" data-status="Новая">
+          <td>Заявка от ключевого клиента</td><td><span class="tag">Почта</span></td><td class="muted">не назначен</td><td>Новая</td></tr>
+        <tr data-href="request.html" data-channel="Форма" data-owner="Я" data-status="Новая">
+          <td>Уточнение по счёту</td><td><span class="tag">Форма</span></td><td>Я</td><td>Новая</td></tr>
       </tbody>
     </table>
 
-    <p class="footer-hint">Кликните «+ Сохранить текущий вид», чтобы пройти сценарий →</p>
+    <p class="footer-hint">Попробуйте: смените фильтр «Канал» на «Почта», кликните строку, затем «+ Сохранить текущий вид» →</p>
   </div>
+  <script src="proto.js"></script>
 </body>
 </html>

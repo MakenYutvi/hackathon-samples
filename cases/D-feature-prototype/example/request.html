@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прототип: заявка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="proto-banner">Прототип · lo-fi · для обсуждения, не дизайн</div>
+  <div class="wrap">
+    <p class="subtitle"><a href="index.html">← к списку заявок</a></p>
+    <h1>Запрос КП на перевозку</h1>
+    <p class="subtitle">Экран заявки · открывается кликом по строке списка</p>
+
+    <div class="card" style="max-width:none;">
+      <div class="field">
+        <label>Канал</label>
+        <div><span class="tag">Почта</span></div>
+      </div>
+      <div class="field">
+        <label>Ответственный</label>
+        <select class="select"><option>Не назначен</option><option>Я</option><option>Анна</option></select>
+      </div>
+      <div class="field">
+        <label>Статус</label>
+        <select class="select"><option>Новая</option><option>В работе</option><option>Закрыта</option></select>
+      </div>
+      <div class="field">
+        <label>Текст обращения</label>
+        <div class="captured">Здравствуйте! Нужен расчёт стоимости перевозки 20 паллет Москва — Казань к концу недели. Спасибо.</div>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="index.html">Сохранить</a>
+        <a class="btn" href="index.html">Назад</a>
+      </div>
+    </div>
+
+    <p class="footer-hint">Это иллюстрация экрана заявки для обсуждения сценария, а не финальная форма.</p>
+  </div>
+  <script src="proto.js"></script>
+</body>
+</html>

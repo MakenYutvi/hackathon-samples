@@ -10,14 +10,14 @@
   <div class="proto-banner">Прототип · lo-fi · для обсуждения, не дизайн</div>
   <div class="wrap">
     <h1>Входящие заявки</h1>
-    <p class="subtitle">Экран 3 из 3 · новый сохранённый вид активен и применён</p>
+    <p class="subtitle">Новый сохранённый вид активен и применён</p>
 
     <div class="note">Вид «Почта без ответственного» сохранён и применён.</div>
 
     <!-- Сохранённые виды: добавился новый и стал активным -->
     <div class="views">
       <a class="view-chip" href="index.html">Все заявки <span class="count">5</span></a>
-      <a class="view-chip" href="index.html">Мои открытые <span class="count">2</span></a>
+      <a class="view-chip" href="my-open.html">Мои открытые <span class="count">2</span></a>
       <a class="view-chip active" href="applied.html">Почта без ответственного <span class="count">2</span></a>
       <span class="spacer"></span>
       <a class="btn" href="save-view.html">+ Сохранить текущий вид</a>
@@ -27,17 +27,19 @@
     <div class="filters">
       <div>
         <label>Канал</label>
-        <select class="select"><option selected>Почта</option><option>Все</option><option>Форма</option><option>Телефон</option></select>
+        <select class="select" id="f-channel"><option selected>Почта</option><option>Все</option><option>Форма</option><option>Телефон</option></select>
       </div>
       <div>
         <label>Ответственный</label>
-        <select class="select"><option selected>Не назначен</option><option>Все</option><option>Я</option></select>
+        <select class="select" id="f-owner"><option selected>Не назначен</option><option>Все</option><option>Я</option></select>
       </div>
       <div>
         <label>Статус</label>
-        <select class="select"><option selected>Все</option><option>Новая</option><option>В работе</option><option>Закрыта</option></select>
+        <select class="select" id="f-status"><option>Все</option><option>Новая</option><option>В работе</option><option>Закрыта</option></select>
       </div>
     </div>
+
+    <p class="result-count">Показано заявок: <span id="result-count">2</span> <span class="open-hint">· клик по строке открывает заявку</span></p>
 
     <!-- Список отфильтрован: только почта без ответственного -->
     <table>
@@ -45,12 +47,15 @@
         <tr><th>Заявка</th><th>Канал</th><th>Ответственный</th><th>Статус</th></tr>
       </thead>
       <tbody>
-        <tr><td>Запрос КП на перевозку</td><td><span class="tag">Почта</span></td><td class="muted">не назначен</td><td>Новая</td></tr>
-        <tr><td>Заявка от ключевого клиента</td><td><span class="tag">Почта</span></td><td class="muted">не назначен</td><td>Новая</td></tr>
+        <tr data-href="request.html" data-channel="Почта" data-owner="Не назначен" data-status="Новая">
+          <td>Запрос КП на перевозку</td><td><span class="tag">Почта</span></td><td class="muted">не назначен</td><td>Новая</td></tr>
+        <tr data-href="request.html" data-channel="Почта" data-owner="Не назначен" data-status="Новая">
+          <td>Заявка от ключевого клиента</td><td><span class="tag">Почта</span></td><td class="muted">не назначен</td><td>Новая</td></tr>
       </tbody>
     </table>
 
     <p class="footer-hint">Сценарий пройден. «Все заявки» вернёт полный список.</p>
   </div>
+  <script src="proto.js"></script>
 </body>
 </html>
