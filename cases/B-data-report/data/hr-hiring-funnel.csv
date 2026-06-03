@@ -1,0 +1,26 @@
+month,department,role,applications,phone_screens,onsite_interviews,offers,hires,avg_days_to_hire,offer_accept_rate_pct,primary_source
+2026-01,Engineering,Backend Engineer,180,54,22,8,6,46,78,LinkedIn
+2026-02,Engineering,Backend Engineer,165,48,20,7,5,52,72,LinkedIn
+2026-03,Engineering,Backend Engineer,150,42,18,6,4,61,67,LinkedIn
+2026-04,Engineering,Backend Engineer,140,38,16,6,3,70,55,LinkedIn
+2026-05,Engineering,Backend Engineer,132,35,15,5,3,78,50,LinkedIn
+2026-01,Product,Product Manager,95,30,12,3,2,55,80,Referral
+2026-02,Product,Product Manager,88,27,10,2,2,58,75,Referral
+2026-03,Product,Product Manager,92,28,11,3,2,60,78,Referral
+2026-04,Product,Product Manager,85,25,9,2,1,64,70,Referral
+2026-05,Product,Product Manager,90,26,10,3,2,62,72,Referral
+2026-01,Sales,Account Executive,220,88,40,14,12,28,88,JobBoard
+2026-02,Sales,Account Executive,240,96,44,16,14,26,90,JobBoard
+2026-03,Sales,Account Executive,235,92,42,15,13,27,87,JobBoard
+2026-04,Sales,Account Executive,250,100,46,17,15,25,89,JobBoard
+2026-05,Sales,Account Executive,260,104,48,18,16,24,91,JobBoard
+2026-01,Support,Support Specialist,420,63,18,10,8,22,85,JobBoard
+2026-02,Support,Support Specialist,460,64,19,11,9,21,84,JobBoard
+2026-03,Support,Support Specialist,510,66,20,11,9,23,82,JobBoard
+2026-04,Support,Support Specialist,540,70,21,12,10,20,86,JobBoard
+2026-05,Support,Support Specialist,580,72,22,12,10,22,83,JobBoard
+2026-01,Design,Product Designer,110,33,14,4,3,40,82,Dribbble
+2026-02,Design,Product Designer,105,31,13,3,2,42,78,Dribbble
+2026-03,Design,Product Designer,98,29,12,3,2,44,80,Dribbble
+2026-04,Design,Product Designer,102,30,12,3,2,43,77,Dribbble
+2026-05,Design,Product Designer,100,30,13,3,2,45,79,Dribbble
