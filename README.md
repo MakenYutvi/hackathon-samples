@@ -6,16 +6,17 @@
 
 ## Шаг 0. Настройка окружения
 
-Перед кейсами прогоните **первым делом** setup-промпт под свою ОС: [`SETUP.md`](SETUP.md). Агент сам поставит Git, Python, ripgrep, GitHub CLI и нужные пакеты, чтобы у всех было одинаковое окружение.
+Перед кейсами прогоните **первым делом** setup-промпт под свою ОС: [`SETUP.md`](SETUP.md). Агент сам проверит Python, ripgrep, Node и нужные пакеты; Git/SSH дальше настраивает Codex для первого push личной KB.
 
 ## Как получить локально
 
-```bash
-git clone https://github.com/MakenYutvi/hackathon-samples.git
-cd hackathon-samples
+```text
+Code -> Download ZIP -> unzip -> open folder in Codex
 ```
 
 Дальше открываете эту папку в Codex и идёте по кейсам.
+
+Для личного `lastname-kb`: после `Use this template` обязательно выберите **Private**, затем `Code -> Download ZIP`, распакуйте папку и откройте её в Codex. Дальше Codex покажет public SSH key, вы добавите его в GitHub и пришлёте Codex SSH URL/name/email для первого commit/push.
 
 ## Кейсы
 
